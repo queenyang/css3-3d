@@ -2,7 +2,7 @@ html,body,div,img {margin:0;padding: 0; display: block;}
 .wrp {
     width:100vw;
     height: 100vh;
-    background: #333;
+    background: #434a54;
     perspective: 600px;  /* 视距 */
 }
 .trans-box {

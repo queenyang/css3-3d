@@ -1,0 +1,60 @@
+html,body,div,img {margin:0;padding: 0; display: block;}
+.wrp {
+    width:100vw;
+    height: 100vh;
+    background: #434a54;
+    perspective: 900px;  /* 视距 */
+}
+.trans-box {
+    position: absolute;
+    top: 200px;
+    left: 0;right: 0;
+    margin: 0 auto;
+    width: 220px;
+    height: 220px;
+    transform-style: preserve-3d;  /*3d空间*/
+    transition: 12s;
+    transform: rotateX(-24deg) rotateY(30deg);
+}
+.trans-box:hover {
+    transform: rotateX(360deg) rotateY(180deg); 
+}
+.trans-box >div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 220px;
+    overflow: hidden;
+    text-align: center;
+    line-height: 220px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+}
+/* 拼接魔方体六面 */
+.front {
+    background: palevioletred;
+    z-index: 2;
+    transform: translateZ(110px);
+}
+.back {
+    background: #467186;
+    transform: translateZ(-110px) rotateY(180deg);
+}
+.left {
+    background: #711b01;
+    transform: translateX(-110px) rotateY(-90deg);
+}
+.right {
+    background: #13380a;
+    transform: translateX(110px) rotateY(90deg);
+}
+.top {
+    background: #555605;
+    transform: translateY(-110px) rotateX(90deg);
+}
+.bottom {
+    background: #468386;
+    transform: translateY(110px) rotateX(-90deg);
+}
