@@ -1,0 +1,44 @@
+html,body,div,img {margin:0;padding: 0; display: block;}
+.wrp {
+    width:100vw;
+    height: 100vh;
+    background: #333;
+    perspective: 600px;  /* 视距 */
+}
+.trans-box {
+    position: absolute;
+    top: 200px;
+    left: 0;right: 0;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;  /*3d空间*/
+    transition: 1.5s;
+}
+.trans-box:hover {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform:rotateY(180deg); /* 鼠标hover时box翻转 */
+}
+.trans-box >div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    background: #fff;
+}
+.trans-box >div img {
+    width: 100%;
+    height: auto;
+}
+.side1 {
+    transform:rotateY(180deg);
+}
+.side2 {
+    backface-visibility: hidden;  /* 设置元素背面是否可见 */
+}
