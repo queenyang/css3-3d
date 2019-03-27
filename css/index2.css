@@ -31,6 +31,7 @@ html,body,div,img {margin:0;padding: 0; display: block;}
     color: #fff;
     font-weight: bold;
     font-size: 30px;
+    opacity: 0.6;
 }
 /* 拼接魔方体六面 */
 .front {
