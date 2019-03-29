@@ -1,0 +1,24 @@
+{
+  "name": "css3-3d",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/queenyang/css3-3d.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/queenyang/css3-3d/issues"
+  },
+  "homepage": "https://github.com/queenyang/css3-3d#readme",
+  "devDependencies": {
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "webpack": "^4.29.6"
+  }
+}
